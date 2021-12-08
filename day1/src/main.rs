@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn parse_input() -> Vec<i64> {
-    let filename = "./input/input.txt";
+    let filename = "./input.txt";
     let file = File::open(filename).unwrap();
     BufReader::new(file)
         .lines()
